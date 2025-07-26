@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pandream Landing Page</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .main-content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" alt="Pandream Logo" width="228" height="42" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link trangchu-highlight" href="#trangchu">Trang chủ</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#danhgia">Đánh giá</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="main-content">
+    <!-- Hero Section -->
+    <section id="trangchu" class="hero-transparent hero-padding text-left py-10" style="padding-top: 160px;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 text-left">
+            <h1 class="display-5 fw-bold">Bạn đặc biệt thế nào?<br>
+              <span style="color:#F6A355;">PanDream</span> có câu trả lời!</h1>
+            <p class="lead mb-4">Tìm hiểu bản thân và định hướng nghề nghiệp phù hợp với bạn<br>qua hành trình tương tác cùng trợ lý AI.</p>
+            <a href="#" class="btn btn-orange btn-lg">
+              <img src="assets/download_256dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.png" alt="Download" style="height:28px;vertical-align:middle;margin-right:8px;">
+              <strong>Cài đặt ngay</strong>
+            </a>
+            <a href="https://youtu.be/URG5Q_kEx8U" target="_blank" class="btn btn-transparent-black btn-lg ms-3">
+              <img src="assets/play.png" alt="Play" style="height:28px;vertical-align:middle;margin-right:8px;">
+              <strong>Tìm hiểu thêm</strong>
+            </a>
+            <p class="lead mt-4">Đã có hơn <span class="highlight-number">50.000</span> lượt tải tại</p>
+            <a href="#" class="store-btn me-2">
+              <img src="assets/google_play.png" alt="Google Play" style="max-width:100%;height:auto;">
+            </a>
+            <a href="#" class="store-btn">
+              <img src="assets/app_store.png" alt="App Store" style="max-width:100%;height:auto;">
+            </a>
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="assets/panda.png" alt="Panda" style="max-width:100%;height:auto;">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="gioithieu" class="py-5">
+      <p class="lead text-center mb-2">Giới thiệu ứng dụng</p>
+      <h1 class="display-10 text-center fw-bold feature-title" style="color:#692C10;">Những tính năng của Pandream</h1>
+      <div class="container">
+        <div class="row justify-content-center align-items-stretch">
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <div class="feature-card mb-3 p-3 rounded shadow-sm text-start" style="background:#FAD9CA;">
+              <div class="d-flex align-items-center">
+                <img src="assets/icon_career.png" alt="Gợi ý nghề nghiệp" class="me-3" style="height:auto;max-width:100%;">
+                <div>
+                  <h5 class="fw-bold mb-1">Gợi ý nghề nghiệp</h5>
+                  <p class="mb-0 large">Phân tích kết quả khám phá và đề xuất những nghề phù hợp với cá tính và năng lực của bạn.</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-card p-3 rounded shadow-sm text-start" style="background:#F8D4B2;">
+              <div class="d-flex align-items-center">
+                <img src="assets/icon_info.png" alt="Cung cấp thông tin nghề" class="me-3" style="height:auto;max-width:100%;">
+                <div>
+                  <h5 class="fw-bold mb-1">Cung cấp thông tin nghề</h5>
+                  <p class="mb-0 large">Với các bài viết, video và podcast giúp bạn có cái nhìn sâu hơn về những ngành nghề.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <div class="feature-card feature-center p-4 rounded shadow-sm text-center" style="background:#CFE6FF;">
+              <img src="assets/icon_self.png" alt="Khám phá bản thân" class="mx-auto d-block mb-3" style="height:auto;max-width:100%;">
+              <h5 class="fw-bold mb-2">Khám phá bản thân</h5>
+              <p class="mb-0 large">Các bài trải nghiệm thú vị giúp bạn hiểu rõ "Tôi là ai?", "Tôi thích gì?" và "Tôi giỏi gì?".</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <div class="feature-card mb-3 p-3 rounded shadow-sm text-start" style="background:#F4C18E;">
+              <div class="d-flex align-items-center">
+                <img src="assets/icon_share.png" alt="Góc chia sẻ từ tiền bối" class="me-3" style="height:auto;max-width:100%;">
+                <div>
+                  <h5 class="fw-bold mb-1">Góc chia sẻ từ tiền bối</h5>
+                  <p class="mb-0 large">Lắng nghe câu chuyện nghề thật – người thật từ những anh chị đi trước.</p>
+                </div>
+              </div>
+            </div>
+            <div class="feature-card p-3 rounded shadow-sm text-start" style="background:#F6BBA1;">
+              <div class="d-flex align-items-center">
+                <img src="assets/icon_ai.png" alt="Công cụ AI hỗ trợ" class="me-3" style="height:auto;max-width:100%;">
+                <div>
+                  <h5 class="fw-bold mb-1">Công cụ AI hỗ trợ</h5>
+                  <p class="mb-0 large">AI giúp đỡ bạn luôn sẵn sàng giúp bạn gợi ý mẹo học tập, kỹ năng mềm, vui mỗi lúc và mọi nơi!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mission Section -->
+    <section class="mission-section py-5">
+      <div class="container">
+        <div class="row align-items-center rounded mission-bg px-4 py-5">
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <img src="assets/mission.png" alt="Mission" style="max-width:100%;height:auto;">
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-4 mission-title">Sứ mệnh của chúng tôi</h2>
+            <ul class="list-unstyled mission-list mb-4">
+              <li class="d-flex align-items-start mb-3">
+                <img src="assets/check_circle.png" alt="" style="height: 50px;" class="me-3 mt-1">
+                <span>Giúp học sinh <strong>khám phá bản thân</strong> qua các bài trắc nghiệm khoa học và tương tác sáng tạo.</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <img src="assets/check_circle.png" alt="" style="height: 50px;" class="me-3 mt-1">
+                <span><strong>Khơi dậy đam mê</strong> và sở thích từ những trải nghiệm thực tế với thế giới nghề nghiệp.</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <img src="assets/check_circle.png" alt="" style="height: 50px;" class="me-3 mt-1">
+                <span>Tạo nền tảng <strong>định hướng tương lai</strong> vững vàng ngay từ khi còn ngồi trên ghế nhà trường.</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <img src="assets/check_circle.png" alt="" style="height: 50px;" class="me-3 mt-1">
+                <span>Biến hành trình chọn nghề thành <strong>trải nghiệm thú vị</strong>, dễ hiểu và gần gũi với lứa tuổi học sinh.</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-orange btn-lg px-4">
+              <img src="assets/download.png" alt="Download" style="height:24px;vertical-align:middle;margin-right:8px;">
+              <strong>Cài đặt miễn phí</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--Cường-->
+ <!-- Founder -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold text-brown mb-2 " style="color: #692C10;">Đội ngũ sáng lập</h2>
+    <p class="mb-5 text-muted">Pandream là app hướng nghiệp được tạo nên bởi ba bạn trẻ đầy nhiệt huyết</p>
+
+    <div class="row justify-content-center">
+      <!-- Thu Uyên -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-0  px-3 py-4  " style="background-color: #FDE0D9; border-radius: 36px;">
+          <img src="assets/c6e56503cfdd87da299f72dc416023d4.jpg" class="rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+          <h5 class="fw-bold fs-3">Thu Uyên</h5>
+          <p class="mb-1 fw-bold fs-4"  style="color: #692C10;">Founder</p>
+          <p class="mb-0">"Tôi tạo nên Pandream để các em khám phá<br> chính mình, trước khi ai đó quyết định thay."</p>
+        </div>
+      </div>
+
+      <!-- Quốc Cường -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 px-3 py-4" style="background-color: #FCD5AC; border-radius: 36px;">
+          <img src="assets/c6e56503cfdd87da299f72dc416023d4.jpg" class="rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+          <h5 class="fw-bold fs-3">Quốc Cường</h5>
+          <p class="mb-1 fw-bold fs-4 "  style="color: #692C10;">CEO</p>
+          <p class="mb-0">"Tôi tin công nghệ không chỉ để học tốt hơn,<br> mà còn để hiểu bản thân sâu hơn tin chuẩn ."</p>
+        </div>
+      </div>
+
+      <!-- Xuân Khải -->
+      <div class="col-md-4 mb-4">
+        <div class="card border-0 px-3 py-4" style="background-color: #CDE9FD; border-radius: 36px;">
+          <img src="assets/c6e56503cfdd87da299f72dc416023d4.jpg"  class="rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+          <h5 class="fw-bold fs-3">Xuân Khải</h5>
+          <p class="mb-1 fw-bold fs-4"  style="color: #692C10;">Director</p>
+          <p class="mb-0">" Với gấu Pan bên cạnh, việc tìm ra con đường<br> tương lai sẽ không còn là điều đáng sợ."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--feedback-->
+<section id="danhgia" class="container-fluid text-center py-5">
+  <h2 class="fw-bold mb-4" style="color: #692C10;">Mọi người nói gì về Pandream</h2>
+  <div class="carousel-wrapper" id="carouselWrapper">
+ 
+     <!-- Card 1 -->
+    <div class="card-feedback" style="width: 420px; height: 220px;" onclick="setActiveCard(0)">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <div class="d-flex align-items-center">
+          <img src="assets/c6e56503cfdd87da299f72dc416023d4.jpg" class="avatar me-2">
+          <div class="text-start">
+            <h6 class="fw-bold mb-0 text-brown">Thanh Ngọc</h6>
+            <small class="text-muted">Đánh giá ngày 16/07/2025</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p class="text-start mb-0">Pandream là công cụ hỗ trợ tuyệt vời cho việc định hướng nghề. Học sinh hứng thú hơn nhiều so với các buổi tư vấn truyền thống.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-feedback active" style="width: 420px; height: 220px;"  onclick="setActiveCard(1)">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <div class="d-flex align-items-center">
+          <img src="assets/c6e56503cfdd87da299f72dc416023d4.jpg" class="avatar me-2">
+          <div class="text-start">
+            <h6 class="fw-bold mb-0 text-brown">Ngọc Ánh</h6>
+            <small class="text-muted">Đánh giá ngày 16/07/2025</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p class="text-start mb-0">Lần đầu tiên em hiểu rõ mình hợp với nghề gì. Làm trắc nghiệm rất vui, có gấu Pan hướng dẫn nên không thấy chán tí nào!</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-feedback" style="width: 420px; height: 220px;"  onclick="setActiveCard(2)">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <div class="d-flex align-items-center">
+          <img src="assets/c6e56503cfdd87da299f72dc416023d4.jpg" class="avatar me-2">
+          <div class="text-start">
+            <h6 class="fw-bold mb-0 text-brown">Lê Huy</h6>
+            <small class="text-muted">Đánh giá ngày 16/07/2025</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p class="text-start mb-0">Nhờ Pandream, con tôi dần biết mình thích gì, tự đặt mục tiêu cho bản thân. Đây là ứng dụng mà tôi ước gì mình có từ thời đi học.</p>
+    </div>
+
+  </div>
+
+  <!-- Dots -->
+  <div class="feedback-dots mt-3">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.card-feedback');
+  const dots = document.querySelectorAll('.dot');
+
+  function setActiveCard(index) {
+    cards.forEach(card => card.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    cards[index].classList.add('active');
+    dots[index].classList.add('active');
+
+    // Reorder DOM elements so clicked card is centered
+    const wrapper = document.getElementById('carouselWrapper');
+    const activeCard = cards[index];
+    wrapper.innerHTML = '';
+
+    const left = (index + 2) % 3;
+    const right = (index + 1) % 3;
+
+    wrapper.appendChild(cards[left]);
+    wrapper.appendChild(activeCard);
+    wrapper.appendChild(cards[right]);
+  }
+</script>
+<!-- Uyên -->
+
+<section id="faqs" class="py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold text-brown mb-2 " style="color: #692C10;">Những câu hỏi thường gặp</h2>
+    <p class="mb-5 text-muted">Bạn còn thắc mắc? Xem ngay những câu hỏi thường gặp để hiểu rõ hơn về Pandream!</p>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Pandream dành cho độ tuổi nào?
+      <span class="material-symbols-outlined icon">expand_less</span>
+    </button>
+    <div class="faq-answer">
+      Pandream được thiết kế riêng cho học sinh từ 11 đến 16 tuổi, đặc biệt là học sinh THCS và đầu cấp THPT.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Trắc nghiệm trong app có chính xác không?
+      <span class="material-symbols-outlined icon">expand_more</span>
+    </button>
+    <div class="faq-answer">
+      Các bài trắc nghiệm được xây dựng dựa trên nền tảng khoa học tâm lý, tham khảo các mô hình nổi tiếng như MBTI, Holland, Multiple Intelligences... và được cá nhân hoá bởi AI.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Pandream có thay thế tư vấn hướng nghiệp ở trường không?
+      <span class="material-symbols-outlined icon">expand_more</span>
+    </button>
+    <div class="faq-answer">
+      Không. Pandream là công cụ hỗ trợ bổ sung, giúp học sinh hiểu rõ bản thân và có cơ sở để trao đổi hiệu quả hơn với thầy cô, phụ huynh và chuyên gia hướng nghiệp.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Có cần đăng ký tài khoản để sử dụng app không?
+      <span class="material-symbols-outlined icon">expand_more</span>
+    </button>
+    <div class="faq-answer">
+      Bạn có thể khám phá trước mà không cần đăng ký. Tuy nhiên, để lưu tiến trình và nhận gợi ý cá nhân hoá, bạn nên tạo tài khoản.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      App có hỗ trợ phụ huynh hoặc giáo viên không?
+      <span class="material-symbols-outlined icon">expand_more</span>
+    </button>
+    <div class="faq-answer">
+      Có. Pandream cho phép liên kết tài khoản để phụ huynh hoặc giáo viên cùng theo dõi quá trình phát triển của học sinh nếu được cho phép.
+    </div>
+  </div>
+</section>
+
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    btn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items
+      faqItems.forEach(i => {
+        if (i !== item) {
+          i.classList.remove('active');
+          const otherAnswer = i.querySelector('.faq-answer');
+          otherAnswer.style.maxHeight = '0px';
+        }
+      });
+      
+      // Toggle current item
+      if (isActive) {
+        item.classList.remove('active');
+        answer.style.maxHeight = '0px';
+      } else {
+        item.classList.add('active');
+        // Set max-height to actual scroll height for smooth animation
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+    
+    // Set initial max-height for active items
+    if (item.classList.contains('active')) {
+      setTimeout(() => {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }, 10);
+    }
+  });
+</script>
+
+  <!-- Khải -->
+  <!-- Email Section -->
+<section class="email-section py-5">
+  <div class="container-fluid px-0">
+    <div class="d-flex align-items-stretch rounded email-bg" style="overflow:hidden;">
+      <div class="d-flex flex-column justify-content-end" style="flex:0 0 320px;">
+        <img src="assets/panda_email.png" alt="Panda Email" class="panda-email-img" style="width:320px;max-height:100%;object-fit:contain;">
+      </div>
+      <div class="flex-grow-1 d-flex flex-column justify-content-center align-items-center py-4 px-3">
+        <h2 class="fw-bold mb-2" style="font-size:2rem;">
+          Cài đặt <span style="color:#F6A355;">Pandream</span> ngay hôm nay!
+        </h2>
+        <div class="mb-2" style="font-size:1.1em;color:#222;">
+          Nhập email tại đây để nhận code ưu đãi dành riêng cho bạn
+        </div>
+        <form class="w-100" style="max-width:480px;">
+          <div class="row g-2">
+            <div class="col-12 col-md-8">
+              <input type="email" class="form-control email-input w-100" placeholder="Email của bạn" required>
+            </div>
+            <div class="col-12 col-md-4 d-grid">
+              <button class="btn btn-orange email-btn" type="submit"><strong>Nhận code</strong></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex flex-column justify-content-start align-items-end" style="flex:0 0 180px;">
+        <img src="assets/paper_plane.png" alt="Paper Plane" class="paper_plane_img" style="width: 320px;max-width:100%;margin-top:16px;">
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="custom-footer py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
+          <img src="assets/logo.png" alt="Pandream Logo" style="height:48px;">
+          <div class="mt-3" style="font-size:1em;color:#222;">
+            © 2025 Pandream – All rights reserved.
+          </div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3" style="color:#692C10;">Liên hệ</h5>
+          <div>Email: support@pandream.app</div>
+          <div>Hotline: 0909 123 456</div>
+          <div>Website: <a href="https://pandream.app" target="_blank" style="color:#692C10;">www.pandream.app</a></div>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3" style="color:#692C10;">Thông tin khác</h5>
+          <div>Chính sách bảo mật</div>
+          <div>Điều khoản sử dụng</div>
+          <div>Hướng dẫn dành cho phụ huynh</div>
+        </div>
+        <div class="col-md-3 text-center text-md-start">
+          <h5 class="fw-bold mb-3" style="color:#692C10;">Theo dõi chúng tôi</h5>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+            <a href="#" target="_blank"><img src="assets/Facebook.png" alt="Facebook" style="width:60px;height:60px;"></a>
+            <a href="#" target="_blank"><img src="assets/Instagram.png" alt="Instagram" style="width:60px;height:60px;"></a>
+            <a href="#" target="_blank"><img src="assets/Youtube.png" alt="Youtube" style="width:60px;height:60px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scrolling for navbar links
+    document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const navbarHeight = document.querySelector('.navbar').offsetHeight;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Update active nav link on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop <= navbarHeight + 50) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('trangchu-highlight');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('trangchu-highlight');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
